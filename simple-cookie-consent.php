@@ -3,7 +3,7 @@
  * Plugin Name: WP Simple Cookie Consent
  * Plugin URI: https://github.com/wp-simple-cookie-consent/
  * Description: A simple cookie consent plugin with customisable options
- * Version: 1.0
+ * Version: 1.01
  * Author: Ombush Media Ltd
  * Author URI: https://ombush.com
  * License: GPL-2.0+

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -12,6 +12,7 @@
     z-index: 9999;
     transform: translateY(100%);
     transition: transform 0.3s ease-in-out;
+    width: 100%;
 }
 
 #simple-cookie-consent.visible {
@@ -20,7 +21,7 @@
 
 #simple-cookie-consent p {
     margin: 0 0 10px 0;
-    width: 50%;
+    width: 40%;
 }
 
 #simple-cookie-consent .button-container {
@@ -28,8 +29,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 0.5em 0;
-    width: 15%;
-    padding: 2%;
+    width: 30%;
 }
 
 #simple-cookie-consent button {
@@ -37,6 +37,7 @@
     padding: 0.5em 3em;
     cursor: pointer;
     margin: 0.5em 0.5em;
+    white-space: nowrap;
 }
 
 #simple-cookie-consent .policy-links {
@@ -48,6 +49,7 @@
 
 #simple-cookie-consent .policy-links a {
     margin-bottom: 1em;
+    white-space: nowrap;
 }
 
 #simple-cookie-consent .policy-links a:last-child {

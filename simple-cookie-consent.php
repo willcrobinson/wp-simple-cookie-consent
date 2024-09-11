@@ -151,11 +151,7 @@ class Simple_Cookie_Consent {
             
             echo '<div id="simple-cookie-consent">';
             echo '<p>' . esc_html($message) . '</p>';
-            echo '<div class="button-container">';
-            echo '<button id="scc-accept">Accept</button>';
-            echo '<button id="scc-decline">Decline</button>';
-            echo '</div>';
-            
+
             if ($privacy_policy_url || $cookie_policy_url) {
                 echo '<div class="policy-links">';
                 if ($privacy_policy_url) {
@@ -167,6 +163,13 @@ class Simple_Cookie_Consent {
                 echo '</div>';
             }
             
+            
+            echo '<div class="button-container">';
+            echo '<button id="scc-accept">Accept</button>';
+            echo '<button id="scc-decline">Decline</button>';
+            echo '</div>';
+            
+
             echo '</div>';
         } elseif ($_COOKIE['simple_cookie_consent'] === 'accept') {
             echo get_option('scc_html_code');
